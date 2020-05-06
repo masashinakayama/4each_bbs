@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/* resetのcss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+/*  font-sizeの指定  */
+
+html {
+    /* ルートのフォントサイズを10pxに設定しておく */
+    font-size: 62.5%;
+    background-color: white;
+    color: black;
+}
+
+body {
+    /* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
+    /* chormだとバグを起こすからemで指定する。 */
+    font-size: 1.6em;
+}
+.wrap {
+    overflow-x: hidden;
+}
+h1 {
+    /* 34px */
+    font-size: 3.4rem;
+}
+h2 {
+    /* 26px */
+    font-size: 2.6rem;
+}
+h3 {
+    /* 22px */
+    font-size: 2.2rem;
+}
+
+
+
+
+
+/*--- header ---*/
+header {
+    width: 100%;
+    color: white;
+}
+header .header-in {
+    background-color: black;
+}
+header ul {
+    padding: 15px 0px 15px 90px;
+}
+header ul li{
+  display: inline-block; 
+  padding-right: 50px;
+}
+header ul li:last-child{
+  padding-right: 0;
+}
+header ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+/*--- main ---*/
+main {
+    padding: 30px 12px;
+    width: 100%;
+}
+
+/*--- mainのleft ---*/
+main .left {
+  width: 70%;
+  float: left;
+  padding-right: 50px;
+}
+main .left h1 {
+    border-left: 5px solid black;
+    border-bottom: 3px solid black;
+    margin-bottom: 20px;
+}
+
+/*--- mainのleftのフォーム ---*/
+
+form {
+    background-color: #fbfbfb;
+    border: 3px solid #ebebeb;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+form h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    border-left: 4px solid red;
+    padding: 5px 0 5px 15px;
+}
+.text, .textarea {
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    color: #999;
+    background: #fff;
+}
+form div {
+    padding: 15px;
+}
+.submit {
+    border: 1px solid lightgray;
+    padding: 4px 10px;
+    color: white;
+    background-color: #bfbfbf;
+    border-radius: 5px;
+    border-bottom: 2px solid gray;
+    transition: .3s;
+}
+.submit:hover {
+    border: none;
+    transition: .3s;
+}
+
+/*--- mainのleftのフォームの出力 ---*/
+.result {
+    background-color: #fbfbfb;
+    border: 3px solid #ebebeb;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.result:last-child {
+    margin-bottom: 0px;
+}
+.result h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    padding: 5px 0 5px 0px;
+    border-bottom: 2px solid #ebebeb;
+}
+.result p {
+    margin-left: 10px;
+    padding: 10px;
+}
+.nai {
+    font-weight: 700;
+}
+.hname {
+    font-weight: 300;
+}
+
+
+
+
+/*--- mainのright ---*/
+main .right {
+  width: 30%;
+  float: right;
+  padding-top: 10px;
+}
+.link h2 {
+    border-bottom: 1px dashed black;
+    margin-bottom: 20px;
+    width: 90%;
+}
+.link ul {
+    margin-left: 20px;
+}
+.link ul li {
+    list-style: none;
+    padding-bottom: 18px;
+}
+.link ul li:last-child {
+    padding-bottom: 30px;
+}
+.link ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*--- footer ---*/
+footer {
+    width: 100%;
+    margin-top: 30px;
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+footer p {
+    padding: 15px 0px;
+}
